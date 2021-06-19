@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/DictionaryMatch.dir/DictionaryMatch.cpp.o CMakeFiles/DictionaryMatch.dir/src/Dictionary.cpp.o -o DictionaryMatch  -lstdc++fs 

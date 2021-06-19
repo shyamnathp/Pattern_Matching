@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/PatternMatchers.h
+algorithm
+-
+functional
+-
+string
+-
+vector
+-
+
+/home/shyamnath/Shyam/Pattern_Matching/PatternMatching.cpp
+iostream
+-
+string
+-
+vector
+-
+fstream
+-
+filesystem
+-
+PatternMatchers.h
+-
+
