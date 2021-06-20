@@ -27,7 +27,7 @@ std::vector<std::string> Dictionary::findWords(std::string& input) {
 
     std::set<char> lettersSeen;
     for (const auto &inputWord : inputWords) {
-        char key = std::toupper(inputWord[0]); //assumption all concepts begin with capital letters
+        char key = std::tolower(inputWord[0]); //assumption all concepts begin with small letters
 
         //since all words that start with key are checked, we neednot check again when another word starts with key
         if(lettersSeen.find(key) == lettersSeen.end())

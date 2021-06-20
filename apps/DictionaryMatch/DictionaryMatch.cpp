@@ -6,6 +6,7 @@
 #include <string>
 #include <fstream>
 #include <filesystem>
+#include <algorithm>
 
 #include <Dictionary.h>
 
@@ -14,13 +15,14 @@ namespace fs = std::filesystem;
 int main() {
 
     std::vector<std::string> concepts;
-    fs::path conceptsPath = fs::path("..") / "concepts.txt";
+    fs::path conceptsPath = fs::path("../../..") / "concepts.txt";
     fs::path fullPath = fs::canonical(conceptsPath);
 
     std::string token;
     std::ifstream is(fullPath.string());
     while (std::getline(is, token))
     {
+        std::transform(token.begin(), token.end(), token.begin(), [](unsigned char c) -> unsigned char { return std::tolower(c); });
         concepts.emplace_back(token);
     }
 

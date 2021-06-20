@@ -20,7 +20,7 @@ namespace boyer_moore {
 
     template<typename ForwardIt1>
     void badCharPosition(ForwardIt1 first, ForwardIt1 last, int size,
-                                   int badchar[NO_OF_CHARS]) {
+                                   std::vector<int>& badchar) {
         for (int i = 0; i < NO_OF_CHARS; i++)
             badchar[i] = -1;
 
@@ -35,7 +35,7 @@ namespace boyer_moore {
         int lenPat = std::distance<ForwardIt2>(s_first, s_last);
         int lenTxt = std::distance<ForwardIt2>(first, last);
 
-        int badchar[NO_OF_CHARS];
+        std::vector<int> badchar(NO_OF_CHARS);
         badCharPosition(first, last, lenTxt, badchar);
 
         int shift = 0;
@@ -62,9 +62,7 @@ namespace boyer_moore {
     ForwardIt1 search(ForwardIt1 first, ForwardIt1 last,
                       ForwardIt2 s_first, ForwardIt2 s_last, WithStl) {
         std::transform(first, last, first, [](unsigned char c) -> unsigned char { return std::tolower(c); });
-        std::string conceptLower;
-        std::transform(s_first, s_last, std::back_inserter(conceptLower), [](unsigned char c) -> unsigned char { return std::tolower(c); });
-        return std::search(first, last, std::boyer_moore_searcher(conceptLower.begin(), conceptLower.end()));
+        return std::search(first, last, std::boyer_moore_searcher(s_first, s_last));
     }
 
 }// namespace boyer_moore

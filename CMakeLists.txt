@@ -3,17 +3,15 @@ project(Pattern_Matching)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(PatternMatching PatternMatching.cpp include/PatternMatchers.h)
-target_link_libraries(PatternMatching stdc++fs)
-target_include_directories(PatternMatching PUBLIC include)
+add_subdirectory(apps/PatternMatching)
 
-add_executable(PatternMatchingStl PatternMathcingStl.cpp include/PatternMatchers.h)
-target_link_libraries(PatternMatchingStl stdc++fs)
-target_include_directories(PatternMatchingStl PUBLIC include)
+add_subdirectory(apps/DictionaryMatch)
 
-add_executable(DictionaryMatch DictionaryMatch.cpp src/Dictionary.cpp)
-target_link_libraries(DictionaryMatch stdc++fs)
-target_include_directories(DictionaryMatch PUBLIC include)
+add_subdirectory(apps/AhoCorasick)
+
+if(BUILD_BENCHMARKS)
+    add_subdirectory(benchmarks)
+endif()
 
 if (BUILD_TESTING)
     include(FetchContent)

@@ -1,0 +1,14 @@
+#IDE ignores (e.g. Visual Studio, CLion, VSCode)
+.vscode
+.vs
+out
+.idea
+Debug
+*.log
+.Rhistory
+
+#cmake ignores
+_build*
+*.cmake
+cmake-*
+CMakeSettings.json

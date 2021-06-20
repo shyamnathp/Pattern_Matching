@@ -1,0 +1,34 @@
+Apache License
+Boost Software License
+BSD 3-Clause "New" or "Revised" license
+BSD 2-Clause "Simplified" or "FreeBSD" license
+GNU General Public License (GPL)
+GNU Library or "Lesser" General Public License (LGPL)
+MIT license
+Mozilla Public License
+Common Development and Distribution License
+Eclipse Public License version
+BSD Zero Clause License
+Attribution Assurance License
+Abstyles License
+Adobe Systems Incorporated Source Code License Agreement
+Adobe Glyph List License
+Amazon Digital Services License
+Academic Free License
+Academic Free License
+Academic Free License
+Academic Free License
+Academic Free License
+Afmparse License
+Affero General Public License
+GNU Affero General Public License
+GNU Affero General Public License
+Aladdin Free Public License
+AMD's plpa_map.c License
+Apple MIT License
+Adobe Postscript AFM License
+Adaptive Public License
+Apple Public Source License
+Artistic License
+Bahyph License
+Barr License
