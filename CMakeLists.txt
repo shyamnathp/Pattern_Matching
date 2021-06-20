@@ -14,6 +14,7 @@ if(BUILD_BENCHMARKS)
 endif()
 
 if (BUILD_TESTING)
+    message("Test")
     include(FetchContent)
     FetchContent_Declare(
             googletest

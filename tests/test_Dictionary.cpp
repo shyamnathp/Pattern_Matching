@@ -9,19 +9,19 @@
 #include <Dictionary.h>
 
 namespace {
-    const std::vector<std::string> concepts = {"Indian",
-                                               "Thai",
-                                               "Sushi",
-                                               "Caribbean",
-                                               "Italian", "West Indian",
-                                               "Pub",
-                                               "East Asian",
-                                               "BBQ",
-                                               "Chinese",
-                                               "Portuguese",
-                                               "Spanish",
-                                               "French",
-                                               "East European"};
+    const std::vector<std::string> concepts = {"indian",
+                                               "thai",
+                                               "sushi",
+                                               "caribbean",
+                                               "italian", "west indian",
+                                               "pub",
+                                               "east asian",
+                                               "bbq",
+                                               "chinese",
+                                               "portuguese",
+                                               "spanish",
+                                               "french",
+                                               "east european"};
 
     std::vector<std::string> inputs = {
             "I would like some thai food",
@@ -31,7 +31,7 @@ namespace {
             "Which restaurants do West Indian food",
             "What is the weather like today"};
 
-    const std::vector<std::vector<std::string>> expectedMatches = {{"Thai"}, {"Sushi"}, {"none"}, {"East Asian"}, {"West Indian", "Indian"}, {"none"}};
+    const std::vector<std::vector<std::string>> expectedMatches = {{"thai"}, {"sushi"}, {"none"}, {"east asian"}, {"west indian", "indian"}, {"none"}};
 
 
 }// namespace

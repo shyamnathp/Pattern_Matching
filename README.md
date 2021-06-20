@@ -12,12 +12,13 @@ Then the algorithm would return the context words of 'a' present in 'b'. In the 
 
 output = ["Indian", "German"]
 
-The objective behind this project was to play around with various aspects of C++ mentioned below:
+The objective behind this project was to compare different ways to pattern match a dictionary of words against a user inputed text. Also, to play around with
+certain aspects of C++ like:  
 1. [std::search](https://en.cppreference.com/w/cpp/algorithm/search) with boyer_moore_search seacher.
-2. create a custom boyer moore searcher.
-3. Implement both searches, using almost the same interface as stl std:search.
-4. Implement both the boyer_moore searcher generically with templates.   
-5. Use tag dispatching to differentiate both the custom boyer_moore searcher and the stl std:search base boyer moore searcher.
+2. create a second custom boyer moore searcher.
+3. Implement both searchers using almost the same interface as stl std:search.
+4. Implement both searchers generically with templates.   
+5. Use tag dispatching to differentiate both searchers.
 6. Writing tests in google test instead of catch2.
 7. Use CMake FetchContent instead of Conan.   
 8. Benchmark all the approaches.
