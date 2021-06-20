@@ -1,16 +1,19 @@
 # Pattern Matcher
 
 Suppose you are given a list of context words. Let the list be:  
-
-a= ["Indian", "Greek", "German"]  
+```javascript
+a= ["Indian", "Greek", "German"] 
+``` 
 
 and the user inputs a sentence   
-
+```javascript
 b= "Although I am Indian, I like German food better"
+``` 
 
 Then the algorithm would return the context words of 'a' present in 'b'. In the above example, the output would be
-
+```javascript
 output = ["Indian", "German"]
+``` 
 
 The objective behind this project was to compare different ways to pattern match a dictionary of words against a user inputed text. Also, to play around with
 certain aspects of C++ like:  
@@ -52,7 +55,7 @@ Run the executables as:
 ## Inputs and Outpus
 
 <u>Inputs</u>:  
-    1. The concepts are read from the file concepts.txt in the project folder. Here, one can add more concepts and delete existing.
+    1. The concepts are read from the file concepts.txt in the project folder. Here, one can add more concepts and delete existing. **One can add new words to concepts or remove existing ones**.  
     2. The input text is read from the console.
 
 <u>Ouputs</u>:
