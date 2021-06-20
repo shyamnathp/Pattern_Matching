@@ -26,11 +26,18 @@ The objective behind this project was to play around with various aspects of C++
 
 ## How to run?
 
+### Fetch git submodules  
+```javascript
+git submodule update --init --recursive  
+```
+
 ### Build
-In the repository, do the following:
-1. mkdir build && cd build
-2. cmake .. -DBUILD_TESTING=ON -DBUILD_BENCHMARKS=ON
-3. make 
+In the repository, do the following:  
+```javascript
+mkdir build && cd build
+cmake .. -DBUILD_TESTING=ON -DBUILD_BENCHMARKS=ON
+make 
+```
 
 Run the executables as:  
 
@@ -67,23 +74,24 @@ In this algorithm, I implemented a custom Bayer Moore Search which converts each
 
 The main problem with the above two apporaches is that as the numbers of concepts grows, they becomes terribly slow. In this approach, I create a dictionary based on the first letter of each concept. Here is the psuedo code.
 
-1. Create a dictionary with key as the first letter, mapping the first letter to all the ‘concepts’ that has the same first letter.  
-Example:  
-*concepts*: Indian, West Indian, Indonesian  
-*dictionary* = {‘i’: {‘indian’, ‘indonesian’}, ‘w’:{‘west indian’}}
-
-2. For each word in ‘input’:
-    • find first letter of word
-    • fetch words beginning with letter from map
-    • Check if fetched words are present in the input using PatternMatching-WithStl
-    •  If word is present:
-        		add word to an array
-3. If array.empty()
-	add “none” to array
+    1. Create a dictionary with key as the first letter, mapping the first letter to all the ‘concepts’ that has the same first letter.  
+    Example:  
+    concepts: Indian, West Indian, Indonesian  
+    dictionary = {‘i’: {‘indian’, ‘indonesian’}, ‘w’:{‘west indian’}}
+    
+    2. For each word in ‘input’:
+        • find first letter of word
+        • fetch words beginning with letter from map
+        • Check if fetched words are present in the input using PatternMatching-WithStl
+        •  If word is present:
+                    add word to an array
+                    
+    3. If array.empty()
+        add “none” to array
 	
 * [Aho Corasick Algorithm](https://github.com/cjgdev/aho_corasick.git)
 
- Used a git submodule.
+    Used a git submodule.
 
 ## Tests
 
@@ -91,7 +99,7 @@ Tests, using google test for all the three primary approaches can be found in th
 
 ## Benchmarks
 
-A benchmark that compares the primary three approaches with Aho_Corasick can be found in 'benchmark' folder.
+A benchmark that compares the primary three approaches with AhoCorasick can be found in 'benchmark' folder.
  
 
 
