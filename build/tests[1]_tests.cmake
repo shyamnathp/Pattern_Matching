@@ -1,7 +1,0 @@
-add_test( BoyerMooreTest.WithStl /home/shyamnath/Shyam/Pattern_Matching/build/tests [==[--gtest_filter=BoyerMooreTest.WithStl]==] --gtest_also_run_disabled_tests)
-set_tests_properties( BoyerMooreTest.WithStl PROPERTIES WORKING_DIRECTORY /home/shyamnath/Shyam/Pattern_Matching/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( BoyerMooreTest.WithoutStl /home/shyamnath/Shyam/Pattern_Matching/build/tests [==[--gtest_filter=BoyerMooreTest.WithoutStl]==] --gtest_also_run_disabled_tests)
-set_tests_properties( BoyerMooreTest.WithoutStl PROPERTIES WORKING_DIRECTORY /home/shyamnath/Shyam/Pattern_Matching/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-add_test( DictionaryMatch.WithStl /home/shyamnath/Shyam/Pattern_Matching/build/tests [==[--gtest_filter=DictionaryMatch.WithStl]==] --gtest_also_run_disabled_tests)
-set_tests_properties( DictionaryMatch.WithStl PROPERTIES WORKING_DIRECTORY /home/shyamnath/Shyam/Pattern_Matching/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set( tests_TESTS BoyerMooreTest.WithStl BoyerMooreTest.WithoutStl DictionaryMatch.WithStl)
